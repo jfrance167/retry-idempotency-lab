@@ -1,0 +1,9 @@
+{
+  "schema_version": 1, "source_kind": "synthetic", "scenario_id": "split-gap",
+  "label": "Effect-before-outcome failure remains indeterminate", "profile": "split_record", "retention_ms": 10,
+  "actions": [
+    {"kind": "request", "action_id": "rA", "time_ms": 0, "attempt_id": "A", "intent_id": "intent", "caller_id": "lab", "operation_id": "increment", "key": "K", "delta": 1},
+    {"kind": "complete", "action_id": "cA", "time_ms": 1, "attempt_id": "A", "outcome": "effect_without_record", "response_delivered": false},
+    {"kind": "request", "action_id": "rB", "time_ms": 20, "attempt_id": "B", "intent_id": "intent", "caller_id": "lab", "operation_id": "increment", "key": "K", "delta": 1}
+  ]
+}

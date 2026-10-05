@@ -1,0 +1,2 @@
+# No third-party runtime dependencies. Optional local/CI security scanner only.
+bandit==1.9.4
