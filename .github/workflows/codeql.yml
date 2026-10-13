@@ -26,4 +26,4 @@ jobs:
         with:
           languages: python
           build-mode: none
-      - uses: github/codeql-action/analyze@d3678e237b9c32a6c9bffb3315c335f976f3549f # v3.30.2
+      - uses: github/codeql-action/analyze@24c54180a607b1449ed407dd24f251e4e9147c8d # v4.38.3
